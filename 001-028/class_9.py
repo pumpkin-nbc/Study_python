@@ -9,3 +9,4 @@ def hanoi(n,x,y,z):
 n = int(input('number'))
 hanoi(n,'X','Y','Z')
 
+ 
