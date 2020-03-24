@@ -1,7 +1,8 @@
 import random
 sercet =random.randint(1,10)
+print(sercet)
 print('------------------------')
-temp=input("please write a number")
+temp=int(input("please write a number"))
 guess=int(temp)
 while guess !=sercet:
     temp=input("please write a number")
