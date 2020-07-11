@@ -1,0 +1,28 @@
+import pandas as pd
+import numpy as np
+
+pd.set_option('display.unicode.ambiguous_as_wide', True)
+pd.set_option('display.unicode.east_asian_width', True)
+
+df = pd.DataFrame(pd.read_csv('C:/Users/Mr.Nan/Desktop/rz.csv'))
+print(df)
+print(df.shape)
+print(df.info())
+print(df.dtypes)
+print(df['学号'].dtypes)
+print(df.isnull(),'\n')
+print(df['学号'].isnull(),'\n')
+print(df['高代'].unique(),'\n')
+print(df.values,'\n')
+print(df.columns,'\n')
+print(df.head())
+print(df.tail())
+print(df)
+print(df.dropna())
+print(df.fillna(value=0))
+print(df.fillna(df['解几'].mean()),'\n')
+print(df['英语'].map(int))
+print(df['姓名'].astype('str'))
+print(df.rename(columns={'英语': '语文'}))
+print(df['性别'].drop_duplicates())
+print(df['姓名'].replace('成龙','qqq'))
